@@ -24,16 +24,16 @@
 </head>
 <body >
     <h1 style="text-align: center;"> 📜 Personal Contact Form 📜 </h1>
-    <form action="fsdclass.html" method="get">
+    <form action="submit.html" method="get">
         <table style="background-color: #ffffff ;border:2px rgb(3, 87, 27) solid; ">
             <tbody>
                 <tr >
                     <td><label for="fnmame"><b> First Name</b></label></td>
-                <td><input type="text" id="fname" name="fname" placeholder="Mahesh Reddy" autofocus></td>
+                <td><input type="text" id="fname" name="fname" placeholder="Mahesh Reddy" autofocus required></td>
                 </tr>
                 <tr>
                   <td><label for="lnmame"> <b> Last Name</b></label></td>
-                   <td><input type="text" id="lname" name="lname" placeholder="Peddi Reddy"></td>
+                   <td><input type="text" id="lname" name="lname" placeholder="Peddi Reddy" required></td>
                 </tr>
                 <tr>
                     <td><label for="dob"><b>Date of birth</ssb></label></td>
@@ -49,7 +49,11 @@
                 </tr>
                 <tr>
                     <td><label for="email"><b>📧 Email</b></label></td>
-                    <td><input type="email" name="email" id="email" placeholder="mahesh123@gmail.com"></td>
+                    <td><input type="email" name="email" id="email" placeholder="mahesh123@gmail.com" required></td>
+                </tr>
+                <tr>
+                    <td><label for="web"><b>🌐Web Adress</b></label></td>
+                    <td><input type="email" name="url" id="url" placeholder="www.google.com" ></td>
                 </tr>
                 <tr>
                     <td><label for="gender"><b>👩🏻‍🤝‍👨🏻Gender</b></label></td>
@@ -97,7 +101,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td colspan="2"><input type="checkbox"> <b>I aceept all Conditions</b></td>
+                    <td colspan="2"><input type="checkbox" required> <b>I aceept all Conditions</b></td>
                 </tr>
                 <tr>
                     <td><input type="Reset"></td>
